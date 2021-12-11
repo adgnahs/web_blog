@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>主页</title>
+<link href="principle.css" rel="stylesheet" type="text/css">
+	
+<script type="text/javascript">
+	
+	// 获取模型
+	var modal = document.getElementById('id01');
+
+	// 鼠标点击模型外区域关闭登录框
+	window.onclick = function(event) {
+    	if (event.target == modal) {
+        	modal.style.display = "none";
+    	}
+	}
+	
+	var modal2 = document.getElementById('id02');
+
+	// 鼠标点击模型外区域关闭登录框
+	window.onclick = function(event) {
+    	if (event.target == modal2) {
+			modal2.style.display = "none";
+    	}
+	}
+	var modal3 = document.getElementById('start');
+	window.onclick = function(event) {
+    	if (event.target == modal3) {
+        	window.location.href="../blog sheet/blog.html" ;
+    	}
+	}
+	</script>
+	
+</head>
+
+<body >
+	<div class="shade">
+		<div class="topNav">
+		  <div class="option"> 
+			  <span><a href="../blog sheet/blog.html">博客</a></span> 
+			  <span><a href="../media/media.html">YOUR MEDIA</a></span> 
+			  <span><a href="../community/index.html">社区</a></span> 
+			  <span><a href="../aboutme/aboutme.html">关于</a></span>
+			  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			  <span onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href="#" >注册</a></span>
+			  <span id="register" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#" class="re">登录</a></span>
+			  
+			</div>
+			<div class="logo">
+   		  		<a href="index.html"><h1>ADS<span style="color: #F2A93C">H</span></h1></a>
+		  	</div>
+</div>
+		<div class="panel-rext">
+			<h1>DONE IS BETTER THAN PERFECT</h1>
+			<iframe src="../label_box.html" width="100%" height="120" frameborder="0" scrolling="no" allowtransparency="true"  id="start"></iframe>
+		
+		</div> 
+		<div class="grid">
+			<div class="bucket"  onclick="window.location.href='cross.html'">
+				<img src="../web_img/TV.svg" width="50px" >
+				<h1 id="myblog">我的博客</h1>
+				<p><br>从云到雾到雨露 最后汇成流泉<br>也不过只是为了想要这世界知道<br>反复与坚持之后<br>柔水终成雕刀</p>
+			</div>
+			<div class="bucket" id="bucket02" onclick="window.location.href='../media/media.html'"><img src="../web_img/video.svg" width="50px" >
+				<h1 id="mymedia">MEDIA</h1>
+				<p><br>&nbsp;&nbsp;耳机是人类的避难所<br><br>&nbsp;&nbsp;音乐是灵魂的救心丸</p></div>
+			<div class="bucket" id="bucket03" onclick="window.location.href='../aboutme/aboutme.html'"><img src="../web_img/about.svg" width="50px"  >
+				<h1 id="mybofang">关于</h1>
+				<p><br>这里介绍不了我<br><br>想知道更多关于作者的事吗</p></div>
+			<div class="bucket" id="bucket04" onclick="window.location.href='../community/index.html'"><img src="../web_img/communicaty.svg" width="50px"  >
+				<h1 id="mycommunicaty">社区</h1>
+				<p><br>有我也有你<br>沙这种东西<br>没有约束时不可收拾<br>一经约束<br>就有伟大的能力</p></div>
+	
+		</div>
+	</div>
+	<div class="copyright">
+		<img src="../web_img/touxiang.jpg" id="portrait">
+		<p class="sentence">It`s my WEB coursework，I always tall myself @DONE IS BETTER THAN PERFECT</p>
+		<p class="name">-@AdGnahs</p>	
+	  	<img src="../web_img/twitter.svg" width="50px" id="twitter">
+	</div>
+	<div class="more">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td colspan="3"><h1 id="begin">立即开始</h1>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+	  </tr>
+    <tr>
+      <td><img src="../web_img/sign-up-1.png" height="170"></td>
+	  <td><img src="../web_img/download-1.png" height="170"></td>
+	  <td><img src="../web_img/add-media-1.png" height="170"></td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="33%"><h1>注册</h1></td>
+      <td width="34%"><h1>获取</h1></td>
+      <td width="33%"><h1>不满足于此？</h1></td>
+    </tr>
+    <tr>
+      <td height="50px"><p>&nbsp;</p>
+        <p>获取<a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">免费ADSH账户</a></p></td>
+      <td><p>&nbsp;</p>
+        <p>在您的设备上<a href="#">获取源码</a></p></td>
+      <td><p>&nbsp;</p>
+        <p>通过<a href="https://gitee.com/enterprises?utm_source=baidu&utm_medium=sem&bd_vid=11904012345588360791">git查看更多开源项目</a></p></td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td height="79"><p>&nbsp;</p>
+        <br><br><br> 
+        <p style="color: #AA9798">Copyright © 2021 计科1904尚达  shangda0920@163.com All Rights Reserved.</p></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+	
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../web_img/dahuzi.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">登陆</button>
+      <input type="checkbox" checked="checked"> 记住我
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">ForgotPassword?</a></span>
+	</div>
+	
+</form>
+</div>
+	<div id="id02" class="modal2">
+		  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close modal2">&times;</span>
+		  <form class="modal2-content animate" action="">
+			<div class="container2">
+			  <label><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+
+			  <label><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label><b>Repeat Password</b></label>
+			  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			  <input type="checkbox" checked="checked"> Remember me
+			  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+			  <div class="clearfix2">
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+				<button type="submit" class="signupbtn">Sign Up</button>
+			  </div>
+			</div>
+		  </form>
+	</div>
+</body>
+</html>

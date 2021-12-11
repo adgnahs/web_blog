@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="aboutme.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	
+	// 获取模型
+	var modal = document.getElementById('id01');
+
+	// 鼠标点击模型外区域关闭登录框
+	window.onclick = function(event) {
+    	if (event.target == modal) {
+        	modal.style.display = "none";
+    	}
+	}
+	
+	var modal2 = document.getElementById('id02');
+
+	// 鼠标点击模型外区域关闭登录框
+	window.onclick = function(event) {
+    	if (event.target == modal2) {
+			modal2.style.display = "none";
+    	}
+	}
+	</script>
+</head>
+
+<body>
+<div class="background">
+	<div class="shade">
+		<div class="topNav">
+	      <div class="option"> 
+			  <span><a href="../blog sheet/blog.html">博客</a></span> 
+			  <span><a href="../media/media.html">YOUR MEDIA</a></span> 
+			  <span><a href="../community/index.html">社区</a></span> 
+			  <span><a href="aboutme.html">关于</a></span>
+			  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			  <span onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href="#" >注册</a></span>
+			  <span id="register" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#" class="re">登录</a></span>
+			  
+			</div>
+			<div class="logo">
+   		  		<a href="../principle sheet/index.html"><h1>ADS<span style="color: #F2A93C">H</span></h1></a>
+		  	</div>
+	  </div>
+		<div class="panel-rext">
+			<h1>My Version</h1>
+			<p><br>To empower real human connection by bringing people and entertainment together.s</p>
+	  </div> 	
+  </div>
+</div>
+<section class="essay">
+	<main>
+	<h2>What is ADSH</h2>
+	<p>ADSH是一个博客网站，你可以在里面浏览新闻或是技术贴，或者把它当做一个树洞传播个人思想。简言之，ADSH就是以网络作为载体，简易迅速便捷地发布自己的心得，及时有效轻松地与他人进行交流，再集丰富多彩的个性化展示于一体的博客平台。这里还有媒体播放功能，静心享受音乐带来的片刻宁静。</p>
+		
+		<h2><br>创造者</h2>
+		<table width="100" border="0" cellspacing="0" cellpadding="0"   >
+  <tbody onclick="document.getElementById('mys').style.display='block'">
+    <tr>
+      <td><img src="../web_img/touxiang.jpg" width="200" style="border-radius: 12px 12px 0px 0px;"></td>
+    </tr>
+	  <tr>
+      <td><h3>尚达</h3><br><span>计科1904</span><br>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+	</main>
+</section>
+	
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../web_img/dahuzi.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">登陆</button>
+      <input type="checkbox" checked="checked"> 记住我
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">ForgotPassword?</a></span>
+	</div>
+	
+</form>
+</div>
+	<div id="id02" class="modal2">
+	  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close modal2">&times;</span>
+		  <form class="modal2-content animate" action="">
+			<div class="container2">
+			  <label><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+
+			  <label><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label><b>Repeat Password</b></label>
+			  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			  <input type="checkbox" checked="checked"> Remember me
+			  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+			  <div class="clearfix2">
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+				<button type="submit" class="signupbtn">Sign Up</button>
+			  </div>
+			</div>
+		  </form>
+	</div>
+	<div id="mys" class="modal">
+  
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('mys').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../web_img/touxiang.jpg" alt="Avatar" class="avatar">
+		<h1>&nbsp;尚达</h1>
+		<p id="qq"><br>计科1904<br>201911110</p>
+		<p id="pp">&nbsp;&nbsp;&nbsp;&nbsp;我叫尚达，是ADSH博客的创作者，ADHS也是shangda拼音反写的简称.<br>ADHS有丰富的博客资源和媒体内容，如果你可以在这得到你需要的技术知识或者是时事新闻。<br>&nbsp;&nbsp;&nbsp;&nbsp;你有想法和我交流的话，可以记下我的邮箱shandga0920@163.com 我来自计算机工程学院计算机科学与技术1904班，在大学读书期间我积累了丰富的专业知识，也有一定的编程能力和项目经验。<br>&nbsp;&nbsp;&nbsp;&nbsp;我曾拿到过一些校内外不同等级的科技类奖项，我手中也有丰富的资源与项目，如果你有想法与我交流，请随时联系我。</p>
+    </div>
+
+
+		
+	</form>
+	</div>
+</body>
+</html>

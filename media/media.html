@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MEDIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html音乐播放器</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	
+	// 获取模型
+	var modal = document.getElementById('id01');
+
+	// 鼠标点击模型外区域关闭登录框
+	window.onclick = function(event) {
+    	if (event.target == modal) {
+        	modal.style.display = "none";
+    	}
+	}
+	
+	var modal2 = document.getElementById('id02');
+
+	// 鼠标点击模型外区域关闭登录框
+	window.onclick = function(event) {
+    	if (event.target == modal2) {
+			modal2.style.display = "none";
+    	}
+	}
+	</script>
+</head>
+
+<body>
+<div class="background">
+	<div class="shade">
+		<div class="topNav">
+	      <div class="option"> 
+			  <span><a href="../blog sheet/blog.html">博客</a></span> 
+			  <span><a href="../media/media.html">YOUR MEDIA</a></span> 
+			  <span><a href="../community/index.html">社区</a></span> 
+			  <span><a href="../aboutme/aboutme.html">关于</a></span>
+			  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			  <span onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href="#" >注册</a></span>
+			  <span id="register" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#" class="re">登录</a></span>
+			  
+			</div>
+			<div class="logo">
+   		  		<a href="../principle sheet/index.html"><h2>ADS<span style="color: #F2A93C">H</span></h2></a>
+		  	</div>
+	  </div>
+		<div id="wenzi">
+		<h1>
+    <!-- 使用span显示文字, data-text为Json格式的数组 -->
+    <span
+            id="text"
+            data-text='["我想要对着镜头大声的呐喊<br>城市的喧嚣淹没了我的声音", ""]'
+    ></span>
+    <!-- 闪烁的光标 -->
+    <span class="mark"></span>
+  </h1><br>
+		
+		</div>
+		  <div id="player">
+        <!-- 歌曲信息模块 -->
+        <div id="player-content1">
+            <!-- 歌曲名 -->
+            <div class="music-name"></div>
+            <!-- 歌手名 -->
+            <div class="artist-name"></div>
+            <!-- 歌曲时间 -->
+            <div class="time">
+                <!-- 当前播放的时间 -->
+                <div class="current-time"></div>
+                <!-- 歌曲总时长 -->
+                <div class="total-time"></div>
+            </div>
+            <!-- 进度条 -->
+            <div id="s-area">
+                <!-- 鼠标移动到进度条上，显示的时间信息 -->
+                <div id="ins-time"></div>
+                <!-- 鼠标移动到进度条上，进度条变暗部分-->
+                <div id="s-hover"></div>
+                <!-- 表示当前歌曲播放进度的蓝色进度条 -->
+                <div id="seek-bar"></div>
+            </div>
+        </div>
+
+        <!-- 控制模块 -->
+        <div id="player-content2">
+            <!-- 左侧歌曲封面旋转模块 -->
+            <div class="music-imgs">
+                <!-- 封面图 -->
+                <div class="img"></div>
+                <!-- 歌曲缓冲时的提示文字 -->
+                <div id="buffer-box">缓冲…</div>
+            </div>
+            <!-- 右侧歌曲操作模块 -->
+            <div class="player-controls">
+                <!-- 上一首按钮 -->
+                <div class="btn prev iconfont">&#xe603;</div>
+                <!-- 暂停/播放 按钮 -->
+                <div class="btn play-pause icon-jiediankaishi iconfont"></div>
+                <!-- 下一首按钮 -->
+                <div class="btn next iconfont">&#xe602;</div>
+            </div>
+        </div>
+    </div>
+	
+    <script src="../media/js/jquery-3.4.1.min.js"></script>
+    <script src="../media/js/index.js"></script>	
+  </div>
+</div>
+	
+	
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../web_img/dahuzi.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">登陆</button>
+      <input type="checkbox" checked="checked"> 记住我
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">ForgotPassword?</a></span>
+	</div>
+	
+</form>
+</div>
+	<div id="id02" class="modal2">
+	  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close modal2">&times;</span>
+		  <form class="modal2-content animate" action="">
+			<div class="container2">
+			  <label><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+
+			  <label><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label><b>Repeat Password</b></label>
+			  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			  <input type="checkbox" checked="checked"> Remember me
+			  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+			  <div class="clearfix2">
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+				<button type="submit" class="signupbtn">Sign Up</button>
+			  </div>
+			</div>
+		  </form>
+	</div>
+</body>
+</html>

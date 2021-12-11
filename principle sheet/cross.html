@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+          type="text/css"/>
+  <link rel="stylesheet" href="crossStyle.css" />
+  <title>Document</title>
+</head>
+<body onclick="window.location='../blog sheet/blog.html'">
+<!-- 定位文本到浏览器中央 -->
+<main>
+  <!-- 文字容器，统一由h1控制 -->
+  <h1>
+    <!-- 使用span显示文字, data-text为Json格式的数组 -->
+    <span
+            id="text"
+            data-text='["欢迎光临", "这是ADSH的博客"]'
+    ></span>
+    <!-- 闪烁的光标 -->
+    <span class="mark"></span>
+  </h1><br>
+
+</main>
+  <div>
+    <h3>点击任意处跳过</h3>
+  </div>
+<script src="cross.js"></script>
+</body>
+</html>

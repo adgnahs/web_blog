@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title></title> 
+<style> 
+
+body {
+  display:flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+}
+	
+
+.btn {
+  position: relative;/*相对定位*/
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;/*划线*/
+  border: 1px solid/*实线*/ hsl(190, 100%, 41%);
+  outline: transparent;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: 0.25s;
+  color: hsl(190, 100%, 41%);
+  background-color: transparent;
+  border-color: transparent;
+}	
+
+  .btn .btn-borders-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid hsla(190, 100%, 41%, 0.35);
+}
+.btn .btn-borders-group:nth-child(1) {
+  left: -8px;
+  padding: 0 8px;
+}
+.btn .btn-borders-group:nth-child(2) {
+  top: -8px;
+  padding: 8px 0;
+}
+.btn .btn-borders-group:nth-child(3) {
+  top: -4px;
+  left: -4px;
+  padding: 4px;
+}
+.btn .btn-borders-group .border-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: hsl(190, 100%, 41%);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.btn .btn-borders-group .border-right {
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: hsl(190, 100%, 41%);
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.btn .btn-borders-group .border-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: hsl(190, 100%, 41%);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.btn .btn-borders-group .border-left {
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: hsl(190, 100%, 41%);
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.btn .btn-borders-group .border-left {
+  transition: 0.65s 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+.btn .btn-borders-group .border-bottom {
+  transition: 0.65s 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+.btn .btn-borders-group .border-right {
+  transition: 0.25s cubic-bezier(1, 0, 0.8, 0);
+}
+.btn .btn-borders-group .border-top {
+  transition: 0.25s cubic-bezier(1, 0, 0.8, 0);
+}
+.btn .btn-text {
+	font-size: 35px;
+}
+.btn:hover {
+  color: hsl(190, 100%, 41%);
+  background: transparent;
+}
+.btn:hover .border-top,
+.btn:hover .border-bottom {
+ transform: scaleX(1);
+}
+.btn:hover .border-left,
+.btn:hover .border-right {
+  transform: scaleY(1);
+}
+.btn:hover .border-left {
+  transition: 0.25s cubic-bezier(1, 0, 0.8, 0);
+}
+.btn:hover .border-bottom {
+  transition: 0.25s cubic-bezier(1, 0, 0.8, 0);
+}
+.btn:hover .border-right {
+  transition: 0.65s 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+.btn:hover .border-top {
+  transition: 0.65s 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+  .btn:hover {
+  color: white;
+}
+</style>
+</head>
+<body>
+<button class="btn">
+  <div class="btn-borders-group">
+    <div class="border-top"></div>
+    <div class="border-right"></div>
+    <div class="border-bottom"></div>
+    <div class="border-left"></div>
+  </div>
+  <div class="btn-borders-group">
+    <div class="border-top"></div>
+    <div class="border-right"></div>
+    <div class="border-bottom"></div>
+    <div class="border-left"></div>
+  </div>
+  <div class="btn-borders-group">
+    <div class="border-top"></div>
+    <div class="border-right"></div>
+    <div class="border-bottom"></div>
+    <div class="border-left"></div>
+  </div>
+  <span class="btn-text">Start</span>
+</button>
+</body>
+</html>

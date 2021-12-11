@@ -1,0 +1,368 @@
+@charset "utf-8";
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background:url("../web_img/hero-live-tv-homepage-1024x576.png");
+	background-size:100% 50%;
+}
+.shade{
+	border: 0;
+	width: 100%;
+	height: 100vh;
+	background-color:rgba(41,33,33,0.81)
+
+}
+.topNav .logo{
+	width: 20%;
+	height: 100%;
+	padding: 6vh 0 0 11vw;
+}
+
+.logo h1 {
+    font-size: 38px;
+    text-decoration: overline;
+	width: 5vw;
+}
+.topNav a {
+	text-decoration:none;
+	color:#FFFFFF;
+	width:3px;
+}
+.shade .topNav .option {
+	float: right;
+	width: 60%;
+	height: 15;
+	padding: 6vh 0 0 15vw;
+	margin-right: 120px;
+}
+#register{
+	border-radius: 25px;
+	background: #DC6915;
+	padding: 8px 25px; 
+	
+	
+}
+.topNav .option span {
+	font-size: 25px;
+	color: white;
+	margin:60px 20px;
+	font-weight: 800;
+
+}
+
+.topNav .option a:hover{
+	transition-duration:0.75s;
+	color: #ED7729;
+	
+}
+.shade .panel-rext {
+	width: 100vw;
+	height: 30vh;
+	text-align: center;
+	margin: 15vh 0 0 0;
+	color: white;
+	font-size: 25px;
+}
+.shade .grid {
+
+	width: 100vw;
+	height: 40vh;
+}
+.shade .grid .bucket{
+	padding:  50px;
+	width: 18.05vw;
+	height: 29.2vh;
+	margin-right: 2px;
+	background-color:rgba(0,0,0,0.4);
+	color: aliceblue;
+	-webkit-justify-content: space-between;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;	
+	float:left;
+	font-weight: 600;
+	
+}
+.shade .grid .bucket:hover{
+	transform: translateY(-20px) scale(1.05);
+	background-color:white;
+	color: black;
+	font-weight: 200;
+	
+}
+
+.topNav .option #register:hover{
+	transition-duration:0.25s;
+	background: #F78719;
+	color:#FFFFFF !important;
+
+}
+.shade .grid #bucket03 {
+	width: 19vw;
+	float: right;
+	margin-right: 0;
+	margin-left: 2px;
+}
+.shade .grid #bucket04 {
+	width: 18.3vw;
+	float: right;
+	margin-right: 0;
+	margin-left: 2px;
+}
+.copyright {
+	width: 100%;
+	height: 350px;
+	background: #FFFFFF;
+
+}
+.more{
+	width: 88%;
+	height: 400px;
+	background:#FFFFF0;
+	padding: 75px 100px;
+}
+.copyright #portrait {
+	width:100px; 
+	height:100px; 
+	border-radius:100%; 
+	overflow:hidden;
+	margin: 5vh 0 15px 46.3vw;
+}
+.copyright .sentence {
+	margin: 0 0 0 23vw;
+	font-weight: 800;
+	font-size: 20px;
+	color:#5F5E5E;
+}
+.copyright .name {
+	margin: 15px 0 0 46.4vw;
+	font-size: 18px;
+	font-weight: 300;
+	color:#A5A0A0;
+}
+
+
+.re:hover{
+	color: #FFFFFF!important;
+}
+
+.copyright #twitter {
+	margin:30px 0 0 738px ;
+}
+tr td  {
+	text-align: center;
+	
+}
+tr td a {
+	text-decoration:none;
+	color:#DB680B;
+	width:3px;
+}
+/*tanchu*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span .psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+
+.cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+/* 取消按钮的其他样式 */
+.cancelbtn2 {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* 浮动取消和注册按钮，并添加一个相同的宽度 */
+.cancelbtn2,.signupbtn {float:left;width:50%}
+
+/* 向容器元素添加填充 */
+.container2 {
+    padding: 16px;
+}
+
+
+.modal2 {
+    display: none; /* 在默认情况下隐藏 */
+    position: fixed; /* 生成绝对定位的元素，相对于浏览器窗口进行定位。 */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* 如果需要，启用滚动条 */
+  	background-color: rgb(0,0,0); /* 回退颜色 */
+    background-color: rgba(0,0,0,0.4); /* 黑色 */
+    padding-top: 60px;
+}
+
+/* 模型内容 */
+.modal2-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* 定位关闭按钮 */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* 光标移动到关闭按钮 */
+.close:hover,
+.close:focus {
+    color: red;
+	/*光标呈现为指示链接的指针（一只手）*/
+    cursor: pointer; 
+}
+
+/* 设置浮动*/
+.clearfix2::after {
+    content: "";
+    clear: both;
+    display: table; /*此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
+}
+
+/* 添加缩放动画 */
+.animate {
+
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* 
+@media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。
+这里，如果文档宽度小于 300 像素则操作修改，在额外的小屏幕上更改取消和注册按钮的样式 */
+@media screen and (max-width: 300px) {
+    .cancelbtn2, .signupbtn {
+       width: 100%;
+    }
+}
